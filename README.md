@@ -1,1 +1,1 @@
-# gbx-eslint-config
+# eslint-config-gbx
