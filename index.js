@@ -12,7 +12,8 @@ module.exports = {
             './rules/typescript',
             './rules/syntax',
             './rules/vue'
-        ].map(require.resolve)
+        ].map(require.resolve),
+        "plugin:prettier/recommended",
     ],
     plugins: [
         'import',
