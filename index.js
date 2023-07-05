@@ -13,7 +13,7 @@ module.exports = {
             './rules/syntax',
             './rules/vue'
         ].map(require.resolve),
-        "plugin:prettier/recommended",
+        "prettier/prettier",
     ],
     plugins: [
         'import',
