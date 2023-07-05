@@ -1,6 +1,6 @@
 {
     "name": "@gearbox-solutions/eslint-config-gbx",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Gearbox Solutions coding standards for for JS. Specifically for use in our Vue.js projects",
     "main": "index.js",
     "repository": {
