@@ -25,6 +25,14 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+        'import/no-extraneous-dependencies':[
+            'error',
+            {
+                'devDependencies':[
+                    "./prettier.config.js",
+                ]
+            }
+        ]
     },
     overrides: [
         {
