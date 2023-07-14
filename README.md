@@ -10,10 +10,11 @@ npm install --save-dev @gearbox-solutions/eslint-config-gbx
 touch .eslintrc.js
 ```
 Add the following to your `.eslintrc.js`
-```json
-{
-	"extends": "@gearbox-solutions/gbx"
-}
+```js
+module.exports = {
+    extends: '@gearbox-solutions/gbx',
+};
+
 ```
 
 ### Add scripts to package.json
