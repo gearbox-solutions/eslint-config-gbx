@@ -16,6 +16,15 @@ module.exports = {
 };
 ```
 
+### Create and configure prettier.config.cjs
+```js
+module.exports = {
+    // tailwind plugin disabled until it is updated for 3.0
+    // plugins: [require('prettier-plugin-tailwindcss')],
+    printWidth: 120
+}
+```
+
 ### Add scripts to package.json
 Add the following two script to your package.json file.
 
