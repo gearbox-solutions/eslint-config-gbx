@@ -34,7 +34,6 @@
         "eslint-import-resolver-typescript": "^3.1.1",
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-vue": "^9.9.0",
-        "prettier": "^2.8.8",
         "vue-eslint-parser": "^9.1.1"
     },
     "peerDependencies": {
@@ -47,7 +46,8 @@
         "eslint-import-resolver-typescript": "^3.1.1",
         "eslint-plugin-import": "^2.26.3",
         "eslint-plugin-vue": "^9.9.0",
-        "vue-eslint-parser": "^9.1.1"
+        "vue-eslint-parser": "^9.1.1",
+        "prettier": "^2.8.8"
     },
     "homepage": "https://github.com/gearbox-solutions/eslint-config-gbx#readme"
 }
