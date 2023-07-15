@@ -9,9 +9,9 @@ npm install --save-dev @gearbox-solutions/eslint-config-gbx
 ```
 touch .eslintrc.js
 ```
-Add the following to your `.eslintrc.js`
+Add the following to your `.eslintrc.cjs`
 ```js
-module.exports = {
+export default {
     extends: '@gearbox-solutions/gbx',
 };
 
