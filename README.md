@@ -11,10 +11,9 @@ touch .eslintrc.js
 ```
 Add the following to your `.eslintrc.cjs`
 ```js
-export default {
+module.exports = {
     extends: '@gearbox-solutions/gbx',
 };
-
 ```
 
 ### Add scripts to package.json
