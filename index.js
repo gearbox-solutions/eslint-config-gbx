@@ -17,6 +17,7 @@ module.exports = {
     ],
     plugins: [
         'import',
+        require('prettier-plugin-tailwindcss')
     ],
     parser: 'vue-eslint-parser',
     parserOptions: {
