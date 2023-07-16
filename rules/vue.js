@@ -4,6 +4,22 @@ module.exports = {
         '@vue/eslint-config-typescript/recommended',
     ],
 
+    overrides: [
+        {
+            files: ['*.vue'],
+            rules: {
+                'max-len': 'off',
+            },
+        },
+        {
+            // disable single-word component names for Inertia and Nuxt pages
+            files: ['./resources/js/Pages/**/*.vue', './pages/**/*.vue'],
+            rules: {
+                'vue/multi-word-component-names': 'off',
+            },
+        },
+    ],
+
     rules: {
         'vue/component-name-in-template-casing': [
             'error', 'PascalCase', {
@@ -32,17 +48,8 @@ module.exports = {
         }],
         'vue/padding-line-between-tags': [
             'error', [
-                { blankLine: 'always', prev: '*', next: '*' },
+                {blankLine: 'always', prev: '*', next: '*'},
             ],
         ],
-    },
-
-    overrides: [
-        {
-            files: ['*.vue'],
-            rules: {
-                'max-len': 'off',
-            },
-        },
-    ]
+    }
 }
