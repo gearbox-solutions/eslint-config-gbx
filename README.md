@@ -5,9 +5,9 @@
 npm install --save-dev @gearbox-solutions/eslint-config-gbx
 ```
 
-### Create and configure your .eslintrc.js
+### Create and configure your .eslintrc.cjs
 ```
-touch .eslintrc.js
+touch .eslintrc.cjs
 ```
 Add the following to your `.eslintrc.cjs`
 ```js
