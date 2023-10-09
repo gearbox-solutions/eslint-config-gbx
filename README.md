@@ -19,7 +19,7 @@ module.exports = {
 ### Create and configure prettier.config.cjs
 ```js
 module.exports = {
-    plugins: [require('prettier-plugin-tailwindcss')],
+    plugins: [import('prettier-plugin-tailwindcss')],
     printWidth: 120
 }
 ```
