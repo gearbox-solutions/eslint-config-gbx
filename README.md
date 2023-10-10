@@ -2,7 +2,7 @@
 
 ### Install package and dependencies
 ```
-npm install --save-dev @gearbox-solutions/eslint-config-gbx
+pnpm install --save-dev @gearbox-solutions/eslint-config-gbx
 ```
 
 ### Create and configure your .eslintrc.cjs
