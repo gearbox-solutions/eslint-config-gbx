@@ -9,9 +9,9 @@ pnpm install --save-dev @gearbox-solutions/eslint-config-gbx
 ```
 touch .eslintrc.cjs
 ```
-Add the following to your `.eslintrc.js`
+Add the following to your `.eslintrc.cjs`
 ```js
-export default {
+modeule.exports = {
     extends: '@gearbox-solutions/gbx',
 };
 ```
