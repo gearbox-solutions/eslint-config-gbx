@@ -9,16 +9,16 @@ pnpm install --save-dev @gearbox-solutions/eslint-config-gbx
 ```
 touch .eslintrc.cjs
 ```
-Add the following to your `.eslintrc.cjs`
+Add the following to your `.eslintrc.js`
 ```js
-module.exports = {
+export default {
     extends: '@gearbox-solutions/gbx',
 };
 ```
 
-### Create and configure prettier.config.cjs
+### Create and configure prettier.config.js
 ```js
-module.exports = {
+export default {
     plugins: [import('prettier-plugin-tailwindcss')],
     printWidth: 120
 }
