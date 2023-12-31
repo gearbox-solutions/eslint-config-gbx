@@ -31,7 +31,8 @@ You'll need to replace `<src>` with the location of the files you'd like ESLint 
 ```json
 "scripts": {
 	"lint": "eslint --ext .ts,.js,.vue <src>",
-	"lint:fix": "eslint --ext .ts,.js,.vue <src> --fix"
+	"lint:fix": "eslint --ext .ts,.js,.vue <src> --fix",
+        "prettier:write": "prettier --write resources/js/**/*.{js,ts,vue}"
 },
 ```
 
