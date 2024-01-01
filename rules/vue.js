@@ -21,6 +21,19 @@ module.exports = {
     ],
 
     rules: {
+        "vue/attribute-hyphenation": ['warn', 'always', {
+        // ignore Inertia's <Link> event props which seem to be case-sensitive
+            ignore: [
+                'onCancelToken',
+                'onCancel',
+                'onBefore',
+                'onStart',
+                'onProgress',
+                'onSuccess',
+                'onError',
+                'onFinish'
+            ]
+        }],
         'vue/component-name-in-template-casing': [
             'error', 'PascalCase', {
                 registeredComponentsOnly: false,
