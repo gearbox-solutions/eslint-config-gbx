@@ -32,7 +32,7 @@ You'll need to replace `<src>` with the location of the files you'd like ESLint 
 "scripts": {
 	"lint": "eslint --ext .ts,.js,.vue <src>",
 	"lint:fix": "eslint --ext .ts,.js,.vue <src> --fix",
-        "prettier:write": "prettier --write resources/js/**/*.{js,ts,vue}"
+        "prettier:write": "prettier --write \"resources/js/**/*.{js,ts,vue}\""
 },
 ```
 
