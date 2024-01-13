@@ -51,3 +51,10 @@ Will attempt to fix any errors or warnings that ESLint finds
 ```
 npm run lint:fix
 ```
+### Run Prettier
+
+Format files with Prettier formatting
+
+```
+npm run prettier:write
+```
