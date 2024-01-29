@@ -58,3 +58,11 @@ Format files with Prettier formatting
 ```
 npm run prettier:write
 ```
+
+
+## Publishing this package
+If you make changes to this package, you'll need to publish it to NPM. To do so, follow these steps:
+
+1. Update Version in `package.json`
+2. Commit and push changes
+3. run `npm publish --access public`
