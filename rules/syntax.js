@@ -2,6 +2,7 @@ module.exports = {
     rules: {
         'arrow-parens': ['error', 'as-needed'],
         'camelcase': ['warn', {
+            'properties': 'never',
             'ignoreGlobals': true,
             'ignoreImports': true,
         }],
