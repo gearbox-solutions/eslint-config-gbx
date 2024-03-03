@@ -1,6 +1,6 @@
 {
     "name": "@gearbox-solutions/eslint-config-gbx",
-    "version": "1.4.5",
+    "version": "1.5.0",
     "description": "Gearbox Solutions coding standards for for JS. Specifically for use in our Vue.js projects",
     "main": "index.js",
     "repository": {
@@ -26,29 +26,32 @@
     "author": "Gearbox Solutions Dev Team",
     "license": "ISC",
     "devDependencies": {
-        "@typescript-eslint/parser": "^5.30.0",
-        "@vue/eslint-config-typescript": "^11.0.0",
-        "eslint": "^8.18.0",
+        "@typescript-eslint/parser": "^7.1.0",
+        "@vue/eslint-config-typescript": "^12.0.0",
+        "eslint": "^8.57.0",
         "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^9.1.0",
         "eslint-import-resolver-alias": "^1.1.2",
-        "eslint-import-resolver-typescript": "^3.1.1",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-vue": "^9.9.0",
-        "vue-eslint-parser": "^9.1.1"
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-vue": "^9.22.0",
+        "prettier": "^3.2.5",
+        "prettier-plugin-tailwindcss": "^0.5.11",
+        "vue-eslint-parser": "^9.4.2"
     },
     "peerDependencies": {
-        "@typescript-eslint/parser": "^5.30.0",
-        "@vue/eslint-config-typescript": "^11.0.0",
-        "eslint": "^8.18.0",
+        "@typescript-eslint/parser": "^7.1.0",
+        "@vue/eslint-config-typescript": "^12.0.0",
+        "eslint": "^8.57.0",
         "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-prettier": "^8.8.0",
+        "eslint-config-prettier": "^9.1.0",
         "eslint-import-resolver-alias": "^1.1.2",
-        "eslint-import-resolver-typescript": "^3.1.1",
-        "eslint-plugin-import": "^2.26.3",
-        "eslint-plugin-vue": "^9.9.0",
-        "prettier": "^3.0.3",
-        "prettier-plugin-tailwindcss": "^0.5.4",
-        "vue-eslint-parser": "^9.1.1"
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-vue": "^9.22.0",
+        "prettier": "^3.2.5",
+        "prettier-plugin-tailwindcss": "^0.5.11",
+        "vue-eslint-parser": "^9.4.2"
     },
     "homepage": "https://github.com/gearbox-solutions/eslint-config-gbx#readme"
 }
