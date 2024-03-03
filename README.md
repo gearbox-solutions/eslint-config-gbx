@@ -11,7 +11,7 @@ touch .eslintrc.cjs
 ```
 Add the following to your `.eslintrc.cjs`
 ```js
-modeule.exports = {
+module.exports = {
     extends: '@gearbox-solutions/gbx',
 };
 ```
