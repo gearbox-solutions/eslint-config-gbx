@@ -9,7 +9,6 @@ module.exports = {
         'default-param-last': 'error',
         'import/extensions': ['error', 'never'],
         'import/first': 'off',
-        'import/no-extraneous-dependencies': ['error', {"devDependencies": true}],
         'indent': ['error', 4, {SwitchCase: 1}],
         'linebreak-style': ['error', 'unix'],
         "max-len": ["warn", {
