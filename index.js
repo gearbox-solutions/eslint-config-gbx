@@ -1,58 +1,53 @@
-module.exports = {
-    root: true,
-    env: {
-        browser: true,
-        node: true,
-        es2021: true,
-    },
-    extends: [
-        'eslint:recommended',
-        'airbnb-base',
-        ...[
-            './rules/typescript',
-            './rules/syntax',
-            './rules/vue'
-        ].map(require.resolve),
-        "prettier",
-    ],
-    plugins: [
-        'import',
-    ],
-    parser: 'vue-eslint-parser',
-    parserOptions: {
-        ecmaVersion: 2020,
-    },
-    rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-    },
-    overrides: [
-        {
-            files: [
-                '**/__tests__/*.{j,t}s?(x)',
-                '**/tests/unit/**/*.spec.{j,t}s?(x)',
-            ],
-            env: {
-                jest: true,
+// @ts-check
+
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
+import eslintConfigPrettier from "eslint-config-prettier";
+import pluginVue from "eslint-plugin-vue";
+import vueParser from "vue-eslint-parser";
+import globals from "globals";
+
+export default tseslint.config(
+    eslint.configs.recommended,
+    ...tseslint.configs.recommended,
+    ...pluginVue.configs["flat/strongly-recommended"],
+    eslintConfigPrettier,
+    {
+        // vue and ts files
+        languageOptions: {
+            parser: vueParser,
+            globals: {
+                // Allow browser global functions
+                ...globals.browser,
+                // Make Ziggy's `route` available globally
+                route: "readonly",
             },
-        },
-    ],
-    settings: {
-        'import/parsers': {
-            '@typescript-eslint/parser': ['.ts', '.tsx'],
-        },
-        'import/resolver': {
-            alias: {
-                map: [
-                    ['@', './resources/js'],
-                ],
-                extensions: ['.ts', '.js', '.jsx', '.json'],
-            },
-            typescript: {
-                // always try to resolve types under `<root>@types`
-                // directory even it doesn't contain any source code, like `@types/unist`
-                alwaysTryTypes: true,
+
+            parserOptions: {
+                parser: tseslint.parser,
+                sourceType: "module",
+                extraFileExtensions: [".vue"],
             },
         },
     },
-}
+    {
+        // disable single-word component names for Inertia and Nuxt pages
+        files: ["resources/js/Pages/**/*.vue", "pages/**/*.vue"],
+        rules: {
+            "vue/multi-word-component-names": "off",
+        },
+    },
+    {
+        // node files
+        languageOptions: {
+            globals: {
+                ...globals.node,
+            },
+        },
+        files: ["vite.config.js", "prettier.config.cjs", "eslint.config.js"],
+    },
+    {
+        // global ignores
+        ignores: ["vendor/", "node_modules/"],
+    },
+);
