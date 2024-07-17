@@ -5,15 +5,15 @@
 pnpm install --save-dev @gearbox-solutions/eslint-config-gbx
 ```
 
-### Create and configure your .eslintrc.cjs
-```
-touch .eslintrc.cjs
-```
-Add the following to your `.eslintrc.cjs`
+### Create and configure your eslint.config.mjs
+Add the following to your `eslint.config.mjs`, which should be in the root of your project.
 ```js
-module.exports = {
-    extends: '@gearbox-solutions/gbx',
-};
+import gbxConfig from "@gearbox-solutions/eslint-config-gbx";
+
+export default [
+    ...gbxConfig,
+    // add additional configurations here   
+];
 ```
 
 ### Create and configure prettier.config.js
@@ -32,7 +32,7 @@ You'll need to replace `<src>` with the location of the files you'd like ESLint 
 "scripts": {
 	"lint": "eslint --ext .ts,.js,.vue <src>",
 	"lint:fix": "eslint --ext .ts,.js,.vue <src> --fix",
-        "prettier:write": "prettier --write \"resources/js/**/*.{js,ts,vue}\""
+    "prettier:write": "prettier --write \"resources/js/**/*.{js,ts,vue}\""
 },
 ```
 
@@ -59,6 +59,14 @@ Format files with Prettier formatting
 npm run prettier:write
 ```
 
+## Local development
+This package requires peer dependencies to be installed in your project directly. This means that `npm link` doesn't work like a regular package would.
+
+To develop this package locally, you'll need to follow these steps:
+1. Bundle this package with `npm pack`
+2. Install the tarball in your project with `npm install /path/to/tarball.tgz`
+
+When you want to update the package in your project, you'll need to repeat these steps, which should also refresh any dependencies that have changed.
 
 ## Publishing this package
 If you make changes to this package, you'll need to publish it to NPM. To do so, follow these steps:
