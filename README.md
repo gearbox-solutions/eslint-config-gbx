@@ -28,11 +28,14 @@ export default {
 Add the following two script to your package.json file.
 
 You'll need to replace `<src>` with the location of the files you'd like ESLint to target. This may be different for each project.
+
+For Laravel projects you will probably want `\"resources/js/**/*.{js,ts,vue}\"` for an escaped, quoted string.
 ```json
 "scripts": {
-	"lint": "eslint --ext .ts,.js,.vue <src>",
-	"lint:fix": "eslint --ext .ts,.js,.vue <src> --fix",
-    "prettier:write": "prettier --write \"resources/js/**/*.{js,ts,vue}\""
+    "lint": "eslint <src>",
+    "lint:fix": "eslint <src> --fix",
+    "prettier:check": "prettier <src> --check"
+    "prettier:write": "prettier <src> --write"
 },
 ```
 
