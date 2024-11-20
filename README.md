@@ -66,8 +66,8 @@ npm run prettier:write
 This package requires peer dependencies to be installed in your project directly. This means that `npm link` doesn't work like a regular package would.
 
 To develop this package locally, you'll need to follow these steps:
-1. Bundle this package with `npm pack`
-2. Install the tarball in your project with `npm install /path/to/tarball.tgz`
+1. Bundle this package with `pnpm pack`
+2. Install the tarball in your project with `pnpm install /path/to/tarball.tgz`
 
 When you want to update the package in your project, you'll need to repeat these steps, which should also refresh any dependencies that have changed.
 
