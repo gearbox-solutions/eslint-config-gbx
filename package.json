@@ -1,6 +1,6 @@
 {
     "name": "@gearbox-solutions/eslint-config-gbx",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "description": "Gearbox Solutions coding standards for for JS. Specifically for use in our Vue.js projects",
     "main": "index.js",
     "type": "module",
@@ -27,19 +27,19 @@
     "author": "Gearbox Solutions Dev Team",
     "license": "ISC",
     "peerDependencies": {
-        "eslint": "^9.15.0",
-        "prettier": "^3.3.0",
-        "typescript": "^5.6.3"
+        "eslint": "^9.19.0",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3"
     },
     "homepage": "https://github.com/gearbox-solutions/eslint-config-gbx#readme",
     "dependencies": {
-        "@eslint/js": "^9.9.1",
+        "@eslint/js": "^9.19.0",
         "@types/eslint__js": "^8.42.3",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-vue": "^9.27.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-vue": "^9.32.0",
         "globals": "^15.8.0",
-        "prettier-plugin-tailwindcss": "^0.6.6",
-        "typescript-eslint": "^8.3.0",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "typescript-eslint": "^8.22.0",
         "vue-eslint-parser": "^9.4.3"
     }
 }
