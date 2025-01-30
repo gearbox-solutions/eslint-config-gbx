@@ -1,5 +1,14 @@
 # eslint-config-gbx
 
+### Add PNPM hoist configuration
+Add a `.npmrc` file in the root of your project with the following content:
+```
+public-hoist-pattern[]=*eslint*
+public-hoist-pattern[]=*prettier*
+```
+
+This will make sure that the executables for eslint and prettier are hoisted as if there were installed directly can be run from the command line.
+
 ### Install package and dependencies
 ```
 pnpm install --save-dev @gearbox-solutions/eslint-config-gbx
@@ -12,7 +21,7 @@ import gbxConfig from "@gearbox-solutions/eslint-config-gbx";
 
 export default [
     ...gbxConfig,
-    // add additional configurations here   
+    // add additional configurations here
 ];
 ```
 
