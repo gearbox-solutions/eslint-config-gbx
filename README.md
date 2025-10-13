@@ -29,7 +29,8 @@ export default [
 ```js
 export default {
     plugins: [import('prettier-plugin-tailwindcss')],
-    printWidth: 120
+    printWidth: 120,
+    singleAttributePerLine: true,
 }
 ```
 
